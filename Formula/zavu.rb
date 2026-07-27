@@ -1,7 +1,7 @@
 # Homebrew formula template for the Zavu CLI.
 #
 # Copy this file into the `zavudev/homebrew-tap` repo as `Formula/zavu.rb`,
-# replace the 0.7.5 and {{SHA_*}} placeholders, commit, push. Users get
+# replace the 0.8.0 and {{SHA_*}} placeholders, commit, push. Users get
 # the new version on their next `brew update`.
 #
 # Better yet: let `scripts/update-tap.sh` do it for you on every release.
@@ -9,7 +9,7 @@
 class Zavu < Formula
   desc "Zavu CLI — deploy Functions, send messages, manage Zavu resources"
   homepage "https://zavu.dev"
-  version "0.7.5"
+  version "0.8.0"
   license "MIT"
 
   # URLs point at the PUBLIC release repo (zavudev/zavu-cli). The source
@@ -18,22 +18,22 @@ class Zavu < Formula
   on_macos do
     on_arm do
       url "https://github.com/zavudev/zavu-cli/releases/download/cli-v#{version}/zavu-macos-arm64"
-      sha256 "45928bc788f43577d6a6a4a913f4ec6dbb50a6ddd78b7bbc08d76d389353e672"
+      sha256 "a7e35510fbbaede5e0205f3350e4472003ebbf618ea36b92fee24f87f06d2a52"
     end
     on_intel do
       url "https://github.com/zavudev/zavu-cli/releases/download/cli-v#{version}/zavu-macos-x64"
-      sha256 "cd6e98b1f470c6591c8eca87edfebd11c2164ae58c4cfc445a4729b0e9254e50"
+      sha256 "f2914da3966dd7091e60415246e0c2ee2c3e2a68b4e66d3d55aef90e951f2630"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/zavudev/zavu-cli/releases/download/cli-v#{version}/zavu-linux-arm64"
-      sha256 "d90a7b6702b47c1f2ac257ae5e5241f8dc425f525faccac4c21ae0447c84901c"
+      sha256 "52f8356756b75ff2039967c96a402e226ca50b2dbd5e2dee6e2606db669a774c"
     end
     on_intel do
       url "https://github.com/zavudev/zavu-cli/releases/download/cli-v#{version}/zavu-linux-x64"
-      sha256 "cee26b8f3b434770d317ebcd77288cc9aeeb2dc3780da76d38784f0f77326106"
+      sha256 "5b7d59105026f84bf2b9678353bae7406ca68d5fd2b85b764472a33ee43a31d9"
     end
   end
 
